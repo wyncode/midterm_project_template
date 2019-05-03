@@ -3,6 +3,7 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 const express = require("express")
+const path = require("path")
 const app = express()
 
 // JUST FOR DEMO PURPOSES, PUT YOUR ACTUAL API CODE HERE
