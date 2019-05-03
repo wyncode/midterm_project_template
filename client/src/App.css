@@ -1,0 +1,15 @@
+/* JUST FOR DEMO PURPORSES, REPLACE WITH YOUR OWN CODE */
+
+#demo{
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#demo h1{
+  display: grid;
+  place-items: center;
+}
+
+/* END DEMO */
