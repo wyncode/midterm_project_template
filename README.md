@@ -55,4 +55,4 @@ Create a slide deck for the technical panel. (Here's an [example](https://docs.g
 * Include code snippets with brief explanations. Or, specific references to the location of the code in your GitHub repo.
 * It should emphasize your technical setbacks and solutions.
 * Get straight to the point.
-* Be prepared to answer questions. About what? Study this [doc](https://drive.google.com/file/d/1lV9qdBUqoriF1TbltK4JWcd0Th0dNzbW/view?usp=sharing).
+* Be prepared to answer questions. 
