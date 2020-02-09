@@ -14,6 +14,10 @@
     "server": "nodemon server.js",
     "client": "cd client && yarn run start",
     "dev": "concurrently \"yarn run server\" \"yarn run client\"",
-    "heroku-postbuild": "cd client && yarn && yarn run build"
+    "heroku-postbuild": "cd client && yarn && yarn run build",
+    "prettyfi": "prettier '*/**/*.js' --write"
+  },
+  "devDependencies": {
+    "prettier": "1.19.1"
   }
 }

@@ -2,17 +2,9 @@ if (process.env.NODE_ENV !== 'production') {
   require('dotenv').config()
 }
 
-const express = require("express")
-const path = require("path")
+const express = require('express')
+const path = require('path')
 const app = express()
-
-// JUST FOR DEMO PURPOSES, PUT YOUR ACTUAL API CODE HERE
-app.get('/api/demo', (request, response) => {
-  response.json({
-    message: "Hello from server.js"
-  })
-})
-// END DEMO
 
 if (process.env.NODE_ENV === 'production') {
   // Serve any static files
@@ -23,8 +15,15 @@ if (process.env.NODE_ENV === 'production') {
   })
 }
 
+// JUST FOR DEMO PURPOSES, PUT YOUR ACTUAL API CODE HERE
+app.get('/api/demo', (request, response) => {
+  response.json({
+    message: 'Hello from server.js'
+  })
+})
+// END DEMO
+
 const port = process.env.PORT || 8080
-app.listen(
-  port,
-  () => { console.log(`API listening on port ${port}...`) }
-)
+app.listen(port, () => {
+  console.log(`API listening on port ${port}...`)
+})
