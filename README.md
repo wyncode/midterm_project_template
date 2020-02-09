@@ -5,6 +5,7 @@ Read the instructions thoroughly before starting your project.
 * `git clone` this repo
 * `cd` into it.
 * `yarn install`
+* `cd client && yarn install`
 
 ## To run your Express.JS and React developer environment locally
 Make sure you are in your project's directory, and then:
