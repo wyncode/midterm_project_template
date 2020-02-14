@@ -17,6 +17,7 @@
     "server": "nodemon server.js",
     "client": "cd client && yarn run start",
     "dev": "concurrently \"yarn run server\" \"yarn run client\"",
-    "heroku-postbuild": "cd client && yarn && yarn run build"
+    "heroku-postbuild": "cd client && yarn && yarn run build",
+    "prettify": "prettier '*/**/*.js' '*/**/*.jsx' '*/**/*.html' '*/**/*.css' --write"
   }
 }
