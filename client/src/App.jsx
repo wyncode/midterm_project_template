@@ -1,23 +1,23 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 
-class App extends React.Component {
-  state = { serverMessage: '' };
+const App = () => {
+  const [serverMessage, setServerMessage] = useState('');
 
-  componentDidMount() {
+  const fetchDemoData = () => {
     fetch('/api/demo')
       .then(response => response.json())
-      .then(data => this.setState({ serverMessage: data.message }));
-  }
+      .then(data => setServerMessage(data.message));
+  };
 
-  render() {
-    return (
-      <div id="demo">
-        <h1>Hello from client/src/App.js</h1>
-        <h1>{this.state.serverMessage}</h1>
-      </div>
-    );
-  }
-}
+  useEffect(fetchDemoData, []);
+
+  return (
+    <div id="demo">
+      <h1>Hello from client/src/App.js</h1>
+      <h1>{serverMessage}</h1>
+    </div>
+  );
+};
 
 export default App;

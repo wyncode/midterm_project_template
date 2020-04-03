@@ -8,7 +8,7 @@
     "express": "^4.17.1"
   },
   "devDependencies": {
-    "prettier": "^1.19.1",
+    "prettier": "^2.0.2",
     "nodemon": "^2.0.2",
     "dotenv": "^8.2.0"
   },
