@@ -18,9 +18,9 @@ const App = () => {
   return (
     <AppContextProvider>
       <div id="demo">
-        <h1>Hello from client/src/App.js</h1>
+        <h3>Hello from client/src/App.js</h3>
         <ContextDemo />
-        <h1>{serverMessage}</h1>
+        <h3>{serverMessage}</h3>
       </div>
     </AppContextProvider>
   );
