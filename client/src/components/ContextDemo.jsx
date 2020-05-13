@@ -6,7 +6,7 @@ const ContextDemo = () => {
 
   contextMethod();
 
-  return <h1>{contextMessage}</h1>;
+  return <h3>{contextMessage}</h3>;
 };
 
 export default ContextDemo;
