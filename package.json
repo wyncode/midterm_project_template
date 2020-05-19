@@ -13,6 +13,7 @@
     "dotenv": "^8.2.0"
   },
   "scripts": {
+    "start": "node server.js",
     "server": "nodemon server.js",
     "client": "cd client && yarn run start",
     "dev": "concurrently \"yarn run server\" \"yarn run client\"",
